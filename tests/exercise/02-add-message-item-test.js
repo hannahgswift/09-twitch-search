@@ -15,7 +15,7 @@
     const messageOne = { username: 'Ryan', message: 'Do your homework' };
     const messageTwo = { username: 'Josh', message: 'Time for standups' };
 
-    // Typeof checks that something is a function, number, etc
+    // Type of checks that something is a function, number, etc
     assert.equal(typeof addMessageItem, 'function',
       'The add message item module should export a function');
     // function lengths returns a number of arguments the function accepts
