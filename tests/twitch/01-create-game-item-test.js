@@ -1,7 +1,6 @@
 (function() {
   /* global require */
   QUnit.module('Twitch Game Page');
-
   const itemOne = {
     name: 'StarCraft II',
     popularity: 2619,
@@ -88,4 +87,5 @@
     testUiForItem(gameItemTwo, itemTwo, assert,
       'Result of createGameItem with itemTwo');
   });
+
 })();
