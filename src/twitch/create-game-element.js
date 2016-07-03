@@ -32,21 +32,19 @@ export default function createGameItem(game) {
 
   const name = document.createElement('h3');
   name.classList.add('game-item__name');
-
   container.appendChild(name);
-
   name.innerText = game.name;
 
   const popularity = document.createElement('h4');
   popularity.classList.add('game-item__popularity');
   container.appendChild(popularity);
-  popularity.innterText = game.popularity;
+  popularity.innerText = game.popularity;
 
-  const image = document.createElement('img');
-  image.classList.add('game-item__image');
-  image.alt = game.name;
-  image.src = game.box.large;
-  container.appendChild(image);
+  const pic = document.createElement('img');
+  pic.classList.add('game-item__pic');
+  pic.alt = game.name;
+  pic.src = game.box.large;
+  container.appendChild(pic);
 
   console.log(container);
   return container;
