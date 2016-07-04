@@ -25,7 +25,7 @@
 //   _links: {},
 // }
 
-export default function createGameItem(game) {
+export default function createGameElement(game) {
 
   const container = document.createElement('div');
   container.classList.add('game-item');
