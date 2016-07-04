@@ -1,5 +1,62 @@
+$brand-white: #fff;
+$brand-purple: #17141f;
+$button-purple: #6441a4;
+
+* {
+  border: 1px solid pink;
+}
+
 .tw-app {
   height: 100vh;
+  width: 100%;
   overflow-y: auto;
   display: flex;
+  flex-direction: row;
+}
+
+.favicon {
+  height: 16px;
+  width: auto;
+}
+
+.logo {
+  height: 2rem;
+  width: auto;
+}
+
+.tw-app__left {
+  display: flex;
+  justify-content: center;
+  background: $brand-purple;
+  width: 20%;
+  height: 100%;
+}
+
+.InputAddOn {
+  color: $brand_white;
+}
+
+.nav-list {
+  color: $brand-white;
+}
+
+.btn-container {
+  text-align: center;
+}
+
+.nav-btn {
+  background: $button-purple;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+}
+
+.tw-app__center {
+  background: gray;
+  width: 80%;
+}
+
+.tw-app-right {
+  background: tan;
 }

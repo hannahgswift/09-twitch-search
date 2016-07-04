@@ -3,18 +3,44 @@
 
 <head>
   <meta charset="utf-8">
-  <title>08-voting-app</title>
+  <title>All Games - Twitch</title>
   <link rel="stylesheet" href="/app.css">
+  <link rel='shortcut icon' href='favicon-twitch.ico' type='image/x-icon'/ >
 </head>
 
 <body>
-  TEST
   <div class="tw-app">
-    <div class="tw-app__left"></div>
-    <div class="tw-app__center">
-      <div class="games-list"></div>
+    <div class="tw-app__left">
+      <div class="side-bar__left">
+        <img class="logo" src="http://s.jtvnw.net/jtv_user_pictures/hosted_images/Twitch_Logo_White.png" alt="">
+        <div class="InputAddOn">
+              <span class="InputAddOn-item"><i class="fa fa-search" aria-hidden="true"></i>
+      </span>
+              <input class="InputAddOn-field" placeholder="Search">
+            </div>
+        <ul class="nav-list">
+          <li class="nav-list__item"><i class="fa fa-plus" aria-hidden="true"></i> Games</li>
+          <li class="nav-list__item"><i class="fa fa-video-camera" aria-hidden="true"></i> Channels</li>
+          <li class="nav-list__item"><i class="fa fa-play" aria-hidden="true"></i> Videos</li>
+        </ul>
+        <div class="btn-container">
+          <button class="nav-btn" >Log In</button>
+          <button class="nav-btn" >Sign Up</button>
+        </div>
+      </div>
     </div>
-    <div class="tw-app__right"></div>
+
+
+    <div class="tw-app__center">
+      <div class="games-list">
+        Games list area. How do I get games in here, eh?
+      </div>
+    </div>
+
+
+    <div class="tw-app__right">
+      Test
+    </div>
   </div>
 
   <script src="/vendor.js" charset="utf-8"></script>
