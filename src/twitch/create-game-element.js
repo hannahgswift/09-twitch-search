@@ -29,6 +29,21 @@ export default function createGameElement(game) {
 
   const container = document.createElement('div');
   container.classList.add('game-item');
+  container.innerHTML = `
+    <div class="game-item">
+      <div>
+        ${pic}
+      </div>
+        <h3 class="game-item__name">${name}</h3>
+        <h3 class="game-item__popularity">${popularity}</h3>
+    </div>
+  `;
+
+  const pic = document.createElement('img');
+  pic.classList.add('game-item__pic');
+  pic.alt = game.name;
+  pic.src = game.box.large;
+  container.appendChild(pic);
 
   const name = document.createElement('h3');
   name.classList.add('game-item__name');
@@ -40,11 +55,6 @@ export default function createGameElement(game) {
   container.appendChild(popularity);
   popularity.innerText = game.popularity;
 
-  const pic = document.createElement('img');
-  pic.classList.add('game-item__pic');
-  pic.alt = game.name;
-  pic.src = game.box.large;
-  container.appendChild(pic);
 
   console.log(container);
   return container;

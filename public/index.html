@@ -23,6 +23,7 @@
           <li class="nav-list__item"><i class="fa fa-video-camera" aria-hidden="true"></i> Channels</li>
           <li class="nav-list__item"><i class="fa fa-play" aria-hidden="true"></i> Videos</li>
         </ul>
+        <p class="channels">Recommended Channels</p>
         <div class="btn-container">
           <button class="nav-btn" >Log In</button>
           <button class="nav-btn" >Sign Up</button>
@@ -33,15 +34,15 @@
 
     <div class="tw-app__center">
       <div class="games-list">
-        Games list area. How do I get games in here, eh?
+
       </div>
     </div>
 
 
     <div class="tw-app__right">
-      Test
+      <p>You're not logged in!</p>
     </div>
-  </div>
+
 
   <script src="/vendor.js" charset="utf-8"></script>
   <script src="/app.js" charset="utf-8"></script>
@@ -51,6 +52,7 @@
 
     const gamesList = document.querySelector('.games-list');
     twitch(gamesList, 'star');
+
   </script>
 </body>
 

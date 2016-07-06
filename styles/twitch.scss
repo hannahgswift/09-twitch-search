@@ -1,9 +1,10 @@
-$brand-white: #fff;
+$bright-white: #fff;
+$brand-white: #faf9fa;
 $brand-purple: #17141f;
 $button-purple: #6441a4;
 
 * {
-  border: 1px solid pink;
+  // border: 1px solid pink;
 }
 
 .tw-app {
@@ -11,7 +12,7 @@ $button-purple: #6441a4;
   width: 100%;
   overflow-y: auto;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
 }
 
 .favicon {
@@ -22,6 +23,8 @@ $button-purple: #6441a4;
 .logo {
   height: 2rem;
   width: auto;
+  margin: 1rem auto;
+  display: block;
 }
 
 .tw-app__left {
@@ -30,14 +33,31 @@ $button-purple: #6441a4;
   background: $brand-purple;
   width: 20%;
   height: 100%;
+  overflow: auto;
+
+  padding: 1rem;
 }
 
 .InputAddOn {
-  color: $brand_white;
+  color: $bright-white;
+  font-family: Helvetica Neue,Helvetica,sans-serif;
 }
 
 .nav-list {
   color: $brand-white;
+  margin: 0.5rem auto;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+}
+
+.nav-list__item {
+  padding: 0.5rem;
+  font-family: Helvetica Neue,Helvetica,sans-serif;
+}
+
+.channels {
+  color: $brand-white;
+  text-transform: uppercase;
+  font-family: Helvetica Neue,Helvetica,sans-serif;
 }
 
 .btn-container {
@@ -46,17 +66,46 @@ $button-purple: #6441a4;
 
 .nav-btn {
   background: $button-purple;
-  color: white;
+  color: $bright-white;
   border: none;
   padding: 0.5rem 1rem;
   font-size: 0.8rem;
 }
 
 .tw-app__center {
+  display: flex;
   background: gray;
   width: 80%;
+  overflow: auto;
 }
 
-.tw-app-right {
+
+.games-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.games-item {
+  // margin: auto;
+  background: red;
+  padding: 0.5rem;
+}
+
+.game-item__name {
+  color: blue;
+}
+
+.game-item__popularity {
+  color: green;
+}
+
+.tw-app__right {
   background: tan;
+  overflow: auto;
+}
+
+.tw-app__right:p {
+  color: $brand-purple;
+  background: $brand-white;
 }
