@@ -31,11 +31,11 @@ export default function createGameElement(game) {
   container.classList.add('game-item');
   container.innerHTML = `
     <div class="game-item">
-      <div>
+      <div class="pic-container">
         ${pic}
       </div>
         <h3 class="game-item__name">${name}</h3>
-        <h3 class="game-item__popularity">${popularity}</h3>
+        <h5 class="game-item__popularity">${popularity}</h5>
     </div>
   `;
 

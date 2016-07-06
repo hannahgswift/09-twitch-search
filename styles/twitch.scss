@@ -31,7 +31,7 @@ $button-purple: #6441a4;
   display: flex;
   justify-content: center;
   background: $brand-purple;
-  width: 20%;
+  width: 22%;
   height: 100%;
   overflow: auto;
 
@@ -54,10 +54,39 @@ $button-purple: #6441a4;
   font-family: Helvetica Neue,Helvetica,sans-serif;
 }
 
+.channels-list {
+  margin: 1rem auto;
+  border: 1px solid white;
+}
+
 .channels {
   color: $brand-white;
   text-transform: uppercase;
   font-family: Helvetica Neue,Helvetica,sans-serif;
+  font-size: 0.9rem;
+}
+
+.channels-list__item {
+  display: flex;
+}
+
+.image-wrap {
+
+}
+
+.text-wrap {
+  margin-left: 0.5rem;
+}
+
+.list__item-title {
+  color: $brand-white;
+  font-size: 0.9rem;
+}
+
+.item-title__desc {
+  color: gray;
+  display: block;
+  font-size: 0.7rem;
 }
 
 .btn-container {
@@ -74,38 +103,59 @@ $button-purple: #6441a4;
 
 .tw-app__center {
   display: flex;
-  background: gray;
+  background: $bright-white;
   width: 80%;
   overflow: auto;
+  flex-direction: column;
+}
+
+.heading {
+  display: flex;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+
+}
+
+.all-games {
+  flex-grow: 1;
+  margin-left: 1rem;
+  color: $brand-purple;
+}
+
+.input {
+  margin: 0.5rem;
+  width: 30%;
 }
 
 
 .games-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
-.games-item {
-  // margin: auto;
-  background: red;
-  padding: 0.5rem;
+.game-item {
+  margin: 0.5rem;
 }
 
 .game-item__name {
-  color: blue;
+  color: black;
+  text-align: center;
 }
 
 .game-item__popularity {
-  color: green;
+  color: gray;
+  text-align: center;
+}
+
+.pic-container {
 }
 
 .tw-app__right {
-  background: tan;
+  background: $brand-white;
   overflow: auto;
 }
 
 .tw-app__right:p {
   color: $brand-purple;
-  background: $brand-white;
 }

@@ -23,7 +23,40 @@
           <li class="nav-list__item"><i class="fa fa-video-camera" aria-hidden="true"></i> Channels</li>
           <li class="nav-list__item"><i class="fa fa-play" aria-hidden="true"></i> Videos</li>
         </ul>
-        <p class="channels">Recommended Channels</p>
+
+        <div class="channels-list">
+          <p class="channels">Recommended Channels</p>
+          <div class="channels-list__item">
+            <figure class="image-wrap">
+              <img src="http://www.placekitten.com/40/40" alt="">
+            </figure>
+            <div class="text-wrap">
+              <span class="list__item-title">Golden Split</span>
+              <span class="item-title__desc">playing Sonic the Hedgehog</span>
+            </div>
+          </div>
+
+          <div class="channels-list__item">
+            <figure class="image-wrap">
+              <img src="http://www.placekitten.com/40/40" alt="">
+            </figure>
+            <div class="text-wrap">
+              <span class="list__item-title">lolstarladder</span>
+              <span class="item-title__desc">playing League of Legends</span>
+            </div>
+          </div>
+
+          <div class="channels-list__item">
+            <figure class="image-wrap">
+              <img src="http://www.placekitten.com/40/40" alt="">
+            </figure>
+            <div class="text-wrap">
+              <span class="list__item-title">igromania</span>
+              <span class="item-title__desc">playing Dishonored Definitive</span>
+            </div>
+          </div>
+        </div>
+
         <div class="btn-container">
           <button class="nav-btn" >Log In</button>
           <button class="nav-btn" >Sign Up</button>
@@ -33,9 +66,22 @@
 
 
     <div class="tw-app__center">
-      <div class="games-list">
 
+      <div class="heading">
+        <h1 class="all-games">All Games</h1>
+        <input class="input" type="search" placeholder="Search for a game">
       </div>
+
+      <div class="games-list">
+        <div class="game-item">
+            <div class="pic-container">
+              <img src="http://placekitten.com/200/300" alt="">
+            </div>
+              <h3 class="game-item__name">Name</h3>
+              <h5 class="game-item__popularity">Popularity</h5>
+        </div>
+      </div>
+
     </div>
 
 
@@ -51,7 +97,7 @@
     const twitch = require('twitch/index');
 
     const gamesList = document.querySelector('.games-list');
-    twitch(gamesList, 'star');
+    // twitch(gamesList, 'star');
 
   </script>
 </body>
