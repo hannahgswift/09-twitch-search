@@ -1,10 +1,18 @@
 $bright-white: #fff;
 $brand-white: #faf9fa;
+$light-purple: #cbc8d0;
 $brand-purple: #17141f;
 $button-purple: #6441a4;
 
+$gutter: 1rem;
+
 * {
   // border: 1px solid pink;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
 }
 
 .tw-app {
@@ -30,12 +38,13 @@ $button-purple: #6441a4;
 .tw-app__left {
   display: flex;
   justify-content: center;
+  // align-items: stretch;
   background: $brand-purple;
   width: 22%;
   height: 100%;
   overflow: auto;
 
-  padding: 1rem;
+  padding: $gutter;
 }
 
 .InputAddOn {
@@ -44,7 +53,7 @@ $button-purple: #6441a4;
 }
 
 .nav-list {
-  color: $brand-white;
+  color: $light-purple;
   margin: 0.5rem auto;
   font-family: Helvetica Neue, Helvetica, sans-serif;
 }
@@ -56,11 +65,10 @@ $button-purple: #6441a4;
 
 .channels-list {
   margin: 1rem auto;
-  border: 1px solid white;
 }
 
 .channels {
-  color: $brand-white;
+  color: $light-purple;
   text-transform: uppercase;
   font-family: Helvetica Neue,Helvetica,sans-serif;
   font-size: 0.9rem;
@@ -79,7 +87,7 @@ $button-purple: #6441a4;
 }
 
 .list__item-title {
-  color: $brand-white;
+  color: $light-purple;
   font-size: 0.9rem;
 }
 
@@ -87,6 +95,22 @@ $button-purple: #6441a4;
   color: gray;
   display: block;
   font-size: 0.7rem;
+}
+
+.other-list__container {
+  margin: 1rem auto;
+}
+
+.other-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -1rem;
+}
+
+.more-twitch__item {
+  color: $light-purple;
+  font-size: 0.7rem;
+  padding: 0.2rem 0 0.2rem 0;
 }
 
 .btn-container {
@@ -136,6 +160,8 @@ $button-purple: #6441a4;
 
 .game-item {
   margin: 0.5rem;
+  width: 20%;
+  height: auto;
 }
 
 .game-item__name {
@@ -152,10 +178,49 @@ $button-purple: #6441a4;
 }
 
 .tw-app__right {
-  background: $brand-white;
+  display: flex;
+  background: $light-purple;
   overflow: auto;
+  max-width: 25%;
 }
 
-.tw-app__right:p {
+.tw-app__right-container {
+  margin: 0 auto;
+  padding: $gutter;
+}
+
+.alert {
   color: $brand-purple;
+  font-size: 1.5rem;
+}
+
+.alert-sub {
+  color: $brand-purple;
+  font-size: 0.9rem;
+}
+
+.right-list {
+  margin-left: -1rem;
+}
+
+.right-list__item {
+  color: $brand-purple;
+  background: $bright-white;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  border-left: 0.3rem solid $button-purple;
+}
+
+.btn-container__right {
+  display: flex;
+}
+
+.login-right, .signup-right {
+  border: none;
+  background: $button-purple;
+  color: $bright-white;
+  padding: 0.6rem 0.9rem;
+  margin-left: 0;
+  margin-right: $gutter;
 }

@@ -57,6 +57,30 @@
           </div>
         </div>
 
+        <div class="other-list__container">
+          <p class="channels">More at Twitch</p>
+          <div class="other-list">
+            <ul class="more-twitch__one">
+              <li class="more-twitch__item">About</li>
+              <li class="more-twitch__item">Blog</li>
+              <li class="more-twitch__item">Cookie Policy</li>
+              <li class="more-twitch__item">Help</li>
+              <li class="more-twitch__item">Language</li>
+              <li class="more-twitch__item">Partners</li>
+              <li class="more-twitch__item">Store</li>
+            </ul>
+            <ul class="more-twitch__two">
+              <li class="more-twitch__item">Advertisers</li>
+              <li class="more-twitch__item">Creative</li>
+              <li class="more-twitch__item">Developers</li>
+              <li class="more-twitch__item">Jobs</li>
+              <li class="more-twitch__item">Music</li>
+              <li class="more-twitch__item">Press</li>
+              <li class="more-twitch__item">Terms</li>
+            </ul>
+          </div>
+        </div>
+
         <div class="btn-container">
           <button class="nav-btn" >Log In</button>
           <button class="nav-btn" >Sign Up</button>
@@ -74,11 +98,11 @@
 
       <div class="games-list">
         <div class="game-item">
-            <div class="pic-container">
+            <!-- <div class="pic-container">
               <img src="http://placekitten.com/200/300" alt="">
             </div>
               <h3 class="game-item__name">Name</h3>
-              <h5 class="game-item__popularity">Popularity</h5>
+              <h5 class="game-item__popularity">Popularity</h5> -->
         </div>
       </div>
 
@@ -86,7 +110,22 @@
 
 
     <div class="tw-app__right">
-      <p>You're not logged in!</p>
+      <div class="tw-app__right-container">
+        <p class="alert">You're not logged in!</p>
+        <p class="alert-sub">If you don't have an account, go ahead and sign up. It takes like two seconds and it's totally worth it.</p>
+        <ul class="right-list">
+          <li class="right-list__item">Follow channels you enjoy watching.</li>
+          <li class="right-list__item">Get notifications when they go live.</li>
+          <li class="right-list__item">Chat with your fellow viewers.</li>
+          <li class="right-list__item">Send and receive direct messages.</li>
+          <li class="right-list__item">Start your own broadcast.</li>
+        </ul>
+
+        <div class="btn-container__right">
+          <button class="login-right">Log In</button>
+          <button class="signup-right">Sign Up</button>
+        </div>
+      </div>
     </div>
 
 
@@ -97,7 +136,7 @@
     const twitch = require('twitch/index');
 
     const gamesList = document.querySelector('.games-list');
-    // twitch(gamesList, 'star');
+    twitch(gamesList, 'star');
 
   </script>
 </body>
