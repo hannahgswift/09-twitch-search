@@ -30,14 +30,17 @@ export default function createGameElement(game) {
   const container = document.createElement('div');
   container.classList.add('game-item');
   container.innerHTML = `
-    <div class="game-item">
-    <div class="pic-container">
-      <img src="${pic}" alt="">
-    </div>
-      <h3 class="game-item__name">${name}</h3>
-      <h5 class="game-item__popularity">${popularity}</h5>
-    </div>
-  `;
+      <div class="game-item">
+        <div class="game-item__container">
+          <div class="pic-container">
+            <img class="pic" src="${pic.src}" alt="">
+          </div>
+          <div class="item-text">
+            <h3 class="game-item__name">${pic.alt}</h3>
+            <h5 class="game-item__popularity">${popularity}</h5>
+          </div>
+        </div>
+      </div>`;
 
   const pic = document.createElement('img');
   pic.classList.add('game-item__pic');

@@ -15,6 +15,8 @@ export default function addGameList(parent, data) {
 
   parent.innerHTML = '';
 
+
+
   for (var i = 0; i < data.length; i++) {
     parent.appendChild(createGameElement(data[i]));
   }
