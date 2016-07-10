@@ -15,7 +15,10 @@ export default function twitchSearch(parentElement, searchTerm, getData = getTwi
   // This function will run after `getData` has received data
   // Games will be a list of games from the twitch results
   const afterData = function (games) {
-    addGamesToList(parentElement, games);
+    // const newList = document.createElement('list');
+    // parentElement.appendChild(newList);
+    // classList.add('game-item');
+    return addGamesToList(parentElement, games);
   };
 
   // Need to return this for the tests to work...

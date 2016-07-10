@@ -11,11 +11,9 @@
 import createGameElement from 'twitch/create-game-element';
 
 export default function addGameList(parent, data) {
-  let x = document.getElementsByClassName('game-item__name');
+  let x = document.getElementsByClassName('game-item');
 
   parent.innerHTML = '';
-
-
 
   for (var i = 0; i < data.length; i++) {
     parent.appendChild(createGameElement(data[i]));
