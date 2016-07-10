@@ -26,39 +26,22 @@
 // }
 
 export default function createGameElement(game) {
+  const element = document.createElement('div');
+  element.classList.add('game-item');
 
-  const container = document.createElement('div');
-  container.classList.add('game-item');
-  container.innerHTML = `
-      <div class="game-item">
-        <div class="game-item__container">
-          <div class="pic-container">
-            <img class="pic" src="${pic.src}" alt="">
-          </div>
-          <div class="item-text">
-            <h3 class="game-item__name">${pic.alt}</h3>
-            <h5 class="game-item__popularity">${popularity}</h5>
-          </div>
+  element.innerHTML = `
+      <div class="game-item__container">
+        <div class="pic-container">
+            <img class="pic" src="${game.logo}" alt="">
+        </div>
+        <div class="item-text">
+          <h3 class="game-item__name">${game.name}</h3>
+          <h5 class="game-item__popularity">${game.popularity}</h5>
         </div>
       </div>`;
 
-  const pic = document.createElement('img');
-  pic.classList.add('game-item__pic');
-  pic.alt = game.name;
-  pic.src = game.box.large;
-  container.appendChild(pic);
-
-  const name = document.createElement('h3');
-  name.classList.add('game-item__name');
-  container.appendChild(name);
-  name.innerText = game.name;
-
-  const popularity = document.createElement('h4');
-  popularity.classList.add('game-item__popularity');
-  container.appendChild(popularity);
-  popularity.innerText = game.popularity;
 
 
-  console.log(container);
-  return container;
+  console.log(element);
+  return element;
 }
