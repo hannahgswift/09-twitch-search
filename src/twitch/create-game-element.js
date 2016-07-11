@@ -32,11 +32,11 @@ export default function createGameElement(game) {
   element.innerHTML = `
       <div class="game-item__container">
         <div class="pic-container">
-            <img class="pic" src="${game.box.medium}" alt="">
+            <img class="game-item__pic" src="${game.box.large}" alt="${game.name}">
         </div>
         <div class="item-text">
           <h3 class="game-item__name">${game.name}</h3>
-          <h5 class="game-item__popularity">${game.popularity}</h5>
+          <h4 class="game-item__popularity">${game.popularity}</h4>
         </div>
       </div>`;
 

@@ -40,7 +40,7 @@ ul {
   justify-content: center;
   // align-items: stretch;
   background: $brand-purple;
-  width: 22%;
+  width: 28%;
   height: 100%;
   overflow: auto;
 
@@ -48,8 +48,15 @@ ul {
 }
 
 .InputAddOn {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
   color: $bright-white;
   font-family: Helvetica Neue,Helvetica,sans-serif;
+}
+
+.InputAddOn-item {
+  margin-right: 0.3rem;
 }
 
 .nav-list {
@@ -131,6 +138,7 @@ ul {
   width: 80%;
   overflow: auto;
   flex-direction: column;
+  margin: 2rem;
 }
 
 .heading {
@@ -165,6 +173,7 @@ ul {
 .game-item {
   width: 22%;
   height: auto;
+  margin-bottom: 1.5rem;
 }
 
 .game-item__container {
@@ -177,7 +186,7 @@ ul {
   height: auto;
 }
 
-.pic {
+.game-item__pic {
   width: 100%;
   height: auto;
 }
@@ -187,20 +196,34 @@ ul {
 }
 
 .game-item__name {
-  color: black;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #322f37;
   text-align: left;
   margin: 0 auto;
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+    &:hover {
+      text-overflow: inherit;
+      overflow: visible;
+    }
+
 }
 
 .game-item__popularity {
-  color: gray;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  color: #706a7c;
+  font-size: 1rem;
   text-align: left;
   margin: 0 auto;
 }
 
 .tw-app__right {
   display: flex;
-  background: $light-purple;
+  background: #efeef1;
   overflow: auto;
   max-width: 25%;
 }
@@ -211,13 +234,18 @@ ul {
 }
 
 .alert {
-  color: $brand-purple;
-  font-size: 1.5rem;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #232127;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 3rem;
+  font-size: 2rem;
 }
 
 .alert-sub {
-  color: $brand-purple;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  color: #433f4a;
 }
 
 .right-list {
