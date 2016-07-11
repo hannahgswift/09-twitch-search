@@ -133,7 +133,8 @@ ul {
 }
 
 .tw-app__center {
-  display: flex;
+  display: block;
+  position: relative;
   background: $bright-white;
   width: 80%;
   overflow: auto;
@@ -141,23 +142,30 @@ ul {
   margin: 2rem;
 }
 
+.heading-container {
+  display: block;
+  position: relative;
+}
+
 .heading {
   display: flex;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
   width: 100%;
-
+  margin-bottom: 1rem;
 }
 
 .all-games {
+  margin-top: 0;
+  margin-bottom: 0;
   flex-grow: 1;
-  margin-left: 1rem;
   color: $brand-purple;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .input {
-  margin: 0.5rem;
   width: 30%;
+  border: 1px solid #efeef1;
+  border-right: 2px solid #efeef1;
 }
 
 
@@ -165,7 +173,7 @@ ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   overflow: auto;
   width: 100%;
 }
@@ -240,7 +248,7 @@ ul {
   margin-top: 0;
   margin-bottom: 1rem;
   line-height: 3rem;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .alert-sub {
