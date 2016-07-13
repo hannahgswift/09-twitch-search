@@ -53,10 +53,18 @@ ul {
   margin: auto;
   color: $bright-white;
   font-family: Helvetica Neue,Helvetica,sans-serif;
+  background: #201c2b;
+  padding: 0.5rem;
+  border: 1px solid black;
 }
 
 .InputAddOn-item {
   margin-right: 0.3rem;
+}
+
+.InputAddOn-field {
+  background: transparent;
+  border: none;
 }
 
 .nav-list {
@@ -139,7 +147,7 @@ ul {
   width: 80%;
   overflow: auto;
   flex-direction: column;
-  margin: 2rem;
+  padding: 2rem;
 }
 
 .heading-container {
